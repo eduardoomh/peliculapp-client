@@ -1,0 +1,24 @@
+.card-pelicula{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 9rem 1fr 1fr;
+    grid-gap: 1rem;
+    width: minmax(21rem);
+    height: minmax(20rem);
+    cursor: pointer;
+
+    img{
+        height: minmax(9rem);
+    }
+
+    &__titulo{
+        min-height: 2rem;
+        max-height: 4rem;
+    }
+
+    &__descripcion{
+        overflow-wrap: break-word;
+    }
+
+
+}

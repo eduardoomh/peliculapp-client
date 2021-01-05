@@ -1,0 +1,39 @@
+.detalles{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 1fr;
+
+    div{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 1rem;
+        height: minmax(8rem);
+    }
+
+    &__tecnologias{
+
+        div{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2rem;
+            grid-gap: .5em;
+            justify-content: center;
+
+            div{
+                display: flex;
+                justify-content: center;
+                img{
+                    max-height: 13rem;
+                } 
+            }
+
+
+
+            p{
+                font-size: 1.4rem;
+            }
+        }
+
+    }
+}
